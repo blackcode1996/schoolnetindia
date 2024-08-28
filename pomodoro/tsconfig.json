@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "esModuleInterop": true,
+    "module": "commonjs",
+    "target": "es6",
+    "strict": true,
+    "skipLibCheck": true,
+    "allowJs": true,  // Allow JavaScript files to be included in the project
+    "checkJs": false,  // Disable type checking for JavaScript files
+    "outDir": "./dist",  // Output directory for compiled files (optional)
+    "baseUrl": ".",  // Base directory to resolve non-relative module names
+    "paths": {  // Path mappings for module resolution
+      "*": ["node_modules/*", "src/types/*"]
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.js",  // Include JavaScript files
+    "src/**/*.jsx",  // Include JSX files
+    "src/**/*.test.ts",
+    "src/**/*.test.tsx",
+  ],
+  "exclude": [
+    "node_modules",  // Exclude node_modules directory
+    "dist"  // Exclude the output directory
+  ]
+}

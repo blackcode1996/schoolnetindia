@@ -1,0 +1,183 @@
+.game {
+  display: flex;
+  margin-top: 50px;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.game__you {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2.5rem;
+}
+
+.game__you .text {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 300; 
+  margin-bottom: 2.5rem;
+}
+
+.game__you .icon {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  border: 25px solid transparent; 
+  background-size: 50%;
+}
+
+.game__you .icon--paper {
+  background-color: #fff;
+  background-image: url("../../assets/icon-paper.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  border-color: hsl(230, 89%, 62%);
+  box-shadow: inset 0px 5px 6px grey, 0px 8px hsl(230, 89%, 47%);
+}
+
+.game__you .icon--paper--winner {
+  box-shadow: inset 0px 5px 6px grey, 0px 8px hsl(230, 89%, 47%),
+    0px 0px 0px 50px rgba(255, 255, 255, 0.07),
+    0px 0px 0px 100px rgba(255, 255, 255, 0.05),
+    0px 0px 0px 150px rgba(255, 255, 255, 0.025);
+}
+
+.game__you .icon--scissors {
+  background-color: #fff;
+  background-image: url("../../assets/icon-scissors.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  border-color: hsl(39, 89%, 49%);
+  box-shadow: inset 0px 5px 6px grey, 0px 8px hsl(39, 89%, 34%);
+}
+
+.game__you .icon--scissors--winner {
+  box-shadow: inset 0px 5px 6px grey, 0px 8px hsl(39, 89%, 34%),
+    0px 0px 0px 50px rgba(255, 255, 255, 0.07),
+    0px 0px 0px 100px rgba(255, 255, 255, 0.05),
+    0px 0px 0px 150px rgba(255, 255, 255, 0.025);
+}
+
+.game__you .icon--rock {
+  background-color: #fff;
+  background-image: url("../../assets/icon-rock.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  border-color: hsl(349, 71%, 52%);
+  box-shadow: inset 0px 5px 6px grey, 0px 8px hsl(349, 71%, 37%);
+}
+
+.game__you .icon--rock--winner {
+  box-shadow: inset 0px 5px 6px grey, 0px 8px hsl(349, 71%, 37%),
+    0px 0px 0px 50px rgba(255, 255, 255, 0.07),
+    0px 0px 0px 100px rgba(255, 255, 255, 0.05),
+    0px 0px 0px 150px rgba(255, 255, 255, 0.025);
+}
+
+.game__play {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rem;
+}
+
+.game__play .text {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 700; /* Equivalent to .text-bold utility */
+  margin-bottom: 10px;
+}
+
+.game__play .play-again {
+  background-color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: var(--border-radius); /* Using border-radius from App.css */
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.game__play .play-again:hover {
+  color: red;
+}
+
+.game__house {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.5rem;
+}
+
+.game__house .text {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 300; /* Equivalent to .text-light utility */
+  margin-bottom: 2.5rem;
+}
+
+.game__house .icon {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  border: 25px solid transparent;
+  background-size: 50%;
+}
+
+.game__house .icon--paper {
+  background-color: #fff;
+  background-image: url("../../assets/icon-paper.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  border-color: hsl(230, 89%, 62%);
+  box-shadow: inset 0px 5px 6px grey, 0px 8px hsl(230, 89%, 47%);
+}
+
+.game__house .icon--paper--winner {
+  box-shadow: inset 0px 5px 6px grey, 0px 8px hsl(230, 89%, 47%),
+    0px 0px 0px 50px rgba(255, 255, 255, 0.07),
+    0px 0px 0px 100px rgba(255, 255, 255, 0.05),
+    0px 0px 0px 150px rgba(255, 255, 255, 0.025);
+}
+
+.game__house .icon--scissors {
+  background-color: #fff;
+  background-image: url("../../assets/icon-scissors.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  border-color: hsl(39, 89%, 49%);
+  box-shadow: inset 0px 5px 6px grey, 0px 8px hsl(39, 89%, 34%);
+}
+
+.game__house .icon--scissors--winner {
+  box-shadow: inset 0px 5px 6px grey, 0px 8px hsl(39, 89%, 34%),
+    0px 0px 0px 50px rgba(255, 255, 255, 0.07),
+    0px 0px 0px 100px rgba(255, 255, 255, 0.05),
+    0px 0px 0px 150px rgba(255, 255, 255, 0.025);
+}
+
+.game__house .icon--rock {
+  background-color: #fff;
+  background-image: url("../../assets/icon-rock.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  border-color: hsl(349, 71%, 52%);
+  box-shadow: inset 0px 5px 6px grey, 0px 8px hsl(349, 71%, 37%);
+}
+
+.game__house .icon--rock--winner {
+  box-shadow: inset 0px 5px 6px grey, 0px 8px hsl(349, 71%, 37%),
+    0px 0px 0px 50px rgba(255, 255, 255, 0.07),
+    0px 0px 0px 100px rgba(255, 255, 255, 0.05),
+    0px 0px 0px 150px rgba(255, 255, 255, 0.025);
+}
+
+.game__house .counter {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
